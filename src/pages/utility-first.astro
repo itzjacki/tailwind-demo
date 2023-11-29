@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+import CenteringContainer from "../components/CenteringContainer.astro";
+---
+
+<Layout title="Utility first example">
+  <CenteringContainer>
+    <p class="traditional-paragraph">I use traditional css</p>
+    <p class="border-color-white padding-1rem border-radius-1rem border-solid">
+      I use utility-first css
+    </p>
+    <p style="border: 1px solid white; padding: 1rem; border-radius: 1rem;">
+      I use inline styling
+    </p>
+  </CenteringContainer>
+</Layout>
+<style>
+  .traditional-paragraph {
+    border: solid 1px white;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .border-solid {
+    border: solid 1px;
+  }
+
+  .border-color-white {
+    border-color: white;
+  }
+
+  .padding-1rem {
+    padding: 1rem;
+  }
+
+  .border-radius-1rem {
+    border-radius: 1rem;
+  }
+</style>
